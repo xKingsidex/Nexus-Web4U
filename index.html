@@ -6,13 +6,11 @@
     <meta name="description" content="Nexus Web4U - Agence de création et modernisation de sites web. Votre nexus digital pour des sites modernes et performants.">
     <meta name="keywords" content="création site web, modernisation site, développement web, agence web, site vitrine, e-commerce">
     <meta name="author" content="Nexus Web4U">
+    
     <title>Nexus Web4U - Votre Nexus Digital | Création & Modernisation de Sites Web</title>
-  
-    <!-- Favicon optimisé pour 512x512 -->
-    <link rel="icon" type="image/png" sizes="512x512" href="logo.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="logo.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="logo.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -69,9 +67,14 @@
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#contact" class="cta-nav">Demander un devis</a></li>
             </ul>
+            <button class="hamburger" aria-label="Menu">
+                <i data-lucide="menu"></i>
+            </button>
         </nav>
     </header>
 
+    <!-- Overlay pour fermer le menu mobile -->
+    <div class="menu-overlay"></div>
     <!-- ===== HERO SECTION AMÉLIORÉE ===== -->
     <section class="hero" id="accueil">
         <div class="hero-background">
@@ -186,73 +189,69 @@
             </div>
         </div>
     </section>
-
     <!-- ===== PORTFOLIO SECTION AVEC LIENS ===== -->
-<section class="section section-white" id="portfolio">
-    <div class="container">
-        <h2 class="section-title fade-in">Nos Réalisations</h2>
-        <p class="section-subtitle fade-in">Des projets qui font la différence</p>
-        <div class="portfolio-grid">
-            
-            
-            <a href="https://sociallyapp.vercel.app/" target="_blank" class="project-card fade-in" style="text-decoration: none; color: inherit;">
-                <div class="project-image">
-                    <div class="project-illustration">
-                        <i data-lucide="shopping-cart"></i>
-                        <span>Réseau Social</span>
+    <section class="section section-white" id="portfolio">
+        <div class="container">
+            <h2 class="section-title fade-in">Nos Réalisations</h2>
+            <p class="section-subtitle fade-in">Des projets qui font la différence</p>
+            <div class="portfolio-grid">
+                
+                <a href="https://sociallyapp.vercel.app/" target="_blank" class="project-card fade-in" style="text-decoration: none; color: inherit;">
+                    <div class="project-image">
+                        <div class="project-illustration">
+                            <i data-lucide="shopping-cart"></i>
+                            <span>Réseau Social</span>
+                        </div>
                     </div>
-                </div>
-                <div class="project-info">
-                    <h3>Socially</h3>
-                    <p>Plateforme Web Socially, fonctionnalités similaires aux réseaux sociaux d'aujourd'hui.</p>
-                    <div class="project-tags">
-                        <span class="tag">MongoDB</span>
-                        <span class="tag">Next.js</span>
-                        <span class="tag">API</span>
+                    <div class="project-info">
+                        <h3>Socially</h3>
+                        <p>Plateforme Web Socially, fonctionnalités similaires aux réseaux sociaux d'aujourd'hui.</p>
+                        <div class="project-tags">
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Next.js</span>
+                            <span class="tag">API</span>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
 
-           
-            <a href="https://resto-db-enzo.nextborn.ovh/site.php" target="_blank" class="project-card fade-in" style="text-decoration: none; color: inherit;">
-                <div class="project-image">
-                    <div class="project-illustration">
-                        <i data-lucide="briefcase"></i>
-                        <span>Site Restaurant</span>
+                <a href="https://resto-db-enzo.nextborn.ovh/site.php" target="_blank" class="project-card fade-in" style="text-decoration: none; color: inherit;">
+                    <div class="project-image">
+                        <div class="project-illustration">
+                            <i data-lucide="briefcase"></i>
+                            <span>Site Restaurant</span>
+                        </div>
                     </div>
-                </div>
-                <div class="project-info">
-                    <h3>Restaurant</h3>
-                    <p>Site vitrine professionnel avec prise de rendez-vous en ligne et espace client pour un restaurant.</p>
-                    <div class="project-tags">
-                        <span class="tag">SQL</span>
-                        <span class="tag">HTML/CSS</span>
-                        <span class="tag">SEO</span>
+                    <div class="project-info">
+                        <h3>Restaurant</h3>
+                        <p>Site vitrine professionnel avec prise de rendez-vous en ligne et espace client pour un restaurant.</p>
+                        <div class="project-tags">
+                            <span class="tag">SQL</span>
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">SEO</span>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
 
-            
-            <a href="https://tasksphere-enzo.nextborn.ovh/login" target="_blank" class="project-card fade-in" style="text-decoration: none; color: inherit;">
-                <div class="project-image">
-                    <div class="project-illustration">
-                        <i data-lucide="monitor"></i>
-                        <span>Application Gestion</span>
+                <a href="https://tasksphere-enzo.nextborn.ovh/login" target="_blank" class="project-card fade-in" style="text-decoration: none; color: inherit;">
+                    <div class="project-image">
+                        <div class="project-illustration">
+                            <i data-lucide="monitor"></i>
+                            <span>Application Gestion</span>
+                        </div>
                     </div>
-                </div>
-                <div class="project-info">
-                    <h3>Plateforme de Gestion</h3>
-                    <p>Application web complexe avec tableau de bord analytics et gestion multi-utilisateurs.</p>
-                    <div class="project-tags">
-                        <span class="tag">Symfony</span>
-                        <span class="tag">PHP</span>
-                        <span class="tag">API</span>
+                    <div class="project-info">
+                        <h3>Plateforme de Gestion</h3>
+                        <p>Application web complexe avec tableau de bord analytics et gestion multi-utilisateurs.</p>
+                        <div class="project-tags">
+                            <span class="tag">Symfony</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">API</span>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- ===== ABOUT SECTION AMÉLIORÉE ===== -->
     <section class="section section-light" id="about">
@@ -336,66 +335,45 @@
             </div>
         </div>
     </section>
-
-    <!-- ===== FORMULES SECTION ===== -->
-<section class="section section-white">
-    <div class="container">
-        <h2 class="section-title fade-in">Nos formules de création de site</h2>
-        <p class="section-subtitle fade-in">Des solutions adaptées à tous les besoins</p>
-        <div class="testimonials-grid">
-
-            <!-- Formule 1 -->
-            <div class="testimonial-card fade-in">
-                <h3>Formule Essentielle</h3>
-                <p class="testimonial-text">
-                    À partir de <strong>600€</strong><br>
-                    Idéale pour les petits budgets ou les lancements rapides. Site vitrine avec un thème prédéfini par nos soins. Il ne vous reste plus qu’à nous fournir vos photos et textes.
-                </p>
-                <ul>
-                    <li>✔ Thème professionnel prédéfini</li>
-                    <li>✔ Intégration de vos contenus</li>
-                    <li>✔ Responsive (mobile/tablette)</li>
-                    <li>✔ Optimisation de base SEO</li>
-                </ul>
-                <a href="#contact" class="btn">Demander cette formule</a>
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section class="section section-white">
+        <div class="container">
+            <h2 class="section-title fade-in">Ce que disent nos clients</h2>
+            <p class="section-subtitle fade-in">Leur succès est notre plus belle récompense</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-text">Nexus Web4U a complètement transformé notre présence en ligne. Notre nouveau site génère 3x plus de leads qu'avant ! L'équipe est professionnelle et à l'écoute.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">ML</div>
+                        <div class="author-info">
+                            <h4>Marie Leblanc</h4>
+                            <p>Directrice Marketing, TechStart</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-text">Équipe professionnelle et réactive. Ils ont modernisé notre site e-commerce avec un résultat au-delà de nos attentes. Les ventes ont augmenté de 150% !</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div class="author-info">
+                            <h4>Jean Dupont</h4>
+                            <p>PDG, BoutiqueMode</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-text">Service impeccable du début à la fin. Notre site vitrine reflète parfaitement l'image de notre cabinet. Nos clients nous complimentent régulièrement.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SA</div>
+                        <div class="author-info">
+                            <h4>Sophie Arnaud</h4>
+                            <p>Associée, Cabinet Juridique</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <!-- Formule 2 -->
-            <div class="testimonial-card fade-in">
-                <h3>Formule Avancée</h3>
-                <p class="testimonial-text">
-                    Entre <strong>800€ et 1500€</strong><br>
-                    Pour ceux qui veulent personnaliser leur site avec des couleurs, sections ou fonctionnalités spécifiques.
-                </p>
-                <ul>
-                    <li>✔ Personnalisation partielle du design</li>
-                    <li>✔ Ajout de pages ou de modules</li>
-                    <li>✔ Intégration de contenu et images</li>
-                    <li>✔ Référencement optimisé</li>
-                </ul>
-                <a href="#contact" class="btn">Obtenir un devis personnalisé</a>
-            </div>
-
-            <!-- Formule 3 -->
-            <div class="testimonial-card fade-in">
-                <h3>Formule Premium</h3>
-                <p class="testimonial-text">
-                    À partir de <strong>1500€ à 2000€+</strong><br>
-                    Une solution sur-mesure pour les professionnels souhaitant un site 100% personnalisé, reflétant parfaitement leur image de marque.
-                </p>
-                <ul>
-                    <li>✔ Design 100% personnalisé</li>
-                    <li>✔ Fonctionnalités avancées (réservation, blog, etc.)</li>
-                    <li>✔ Accompagnement stratégique</li>
-                    <li>✔ Référencement SEO poussé</li>
-                </ul>
-                <a href="#contact" class="btn">Parlons de votre projet</a>
-            </div>
-
         </div>
-    </div>
-</section>
-
+    </section>
 
     <!-- ===== CONTACT SECTION AVEC BOUTON DEVIS ===== -->
     <section class="section section-dark" id="contact">
@@ -411,7 +389,7 @@
                            ✓ Réponse rapide garantie<br>
                            ✓ Conseil personnalisé adapté à vos besoins</p>
                         
-                        <a href="enzo.foulon53@gmail.com?subject=Demande%20de%20devis%20-%20Nexus%20Web4U&body=Bonjour%2C%0A%0AJe%20souhaite%20recevoir%20un%20devis%20pour%20mon%20projet%20web.%0A%0AType%20de%20projet%20%3A%20%5BCreation%20%2F%20Modernisation%20%2F%20E-commerce%20%2F%20Autre%5D%0A%0ADescription%20du%20projet%20%3A%0A%0A%0ANom%20de%20l%27entreprise%20%3A%0A%0ATéléphone%20%3A%0A%0AMerci%20pour%20votre%20retour%20rapide%21%0A%0ACordialement" class="btn btn-primary ripple-effect quote-btn">
+                        <a href="mailto:contact@nexusweb4u.fr?subject=Demande%20de%20devis%20-%20Nexus%20Web4U&body=Bonjour%2C%0A%0AJe%20souhaite%20recevoir%20un%20devis%20pour%20mon%20projet%20web.%0A%0AType%20de%20projet%20%3A%20%5BCreation%20%2F%20Modernisation%20%2F%20E-commerce%20%2F%20Autre%5D%0A%0ADescription%20du%20projet%20%3A%0A%0A%0ANom%20de%20l%27entreprise%20%3A%0A%0ATÃ©lÃ©phone%20%3A%0A%0AMerci%20pour%20votre%20retour%20rapide%21%0A%0ACordialement" class="btn btn-primary ripple-effect quote-btn">
                             <i data-lucide="mail"></i>
                             <span class="btn-text">Faire un devis gratuit</span>
                         </a>
@@ -486,223 +464,541 @@
             </div>
         </div>
     </footer>
-
-    <!-- ===== JAVASCRIPT ===== -->
     <script>
-        // ===== LOADER AMÉLIORÉ =====
-        window.addEventListener('load', () => {
-            const loader = document.getElementById('loader');
-            const progressBar = document.querySelector('.progress-bar');
-            const logoCircle = document.querySelector('.logo-circle');
-            
-            // Animate logo circle
+        // ===== JAVASCRIPT COMPLET CORRIGÉ =====
+
+// Variables globales
+let menuOpen = false;
+
+// ===== LOADER AMÉLIORÉ =====
+function initLoader() {
+    window.addEventListener('load', () => {
+        const loader = document.getElementById('loader');
+        const progressBar = document.querySelector('.progress-bar');
+        const logoCircle = document.querySelector('.logo-circle');
+        
+        // Animer le logo circle
+        if (logoCircle) {
             setTimeout(() => {
                 logoCircle.style.strokeDashoffset = '0';
             }, 500);
-            
-            // Simulate loading progress
-            let progress = 0;
-            const progressInterval = setInterval(() => {
-                progress += Math.random() * 12 + 3;
-                if (progress >= 100) {
-                    progress = 100;
-                    clearInterval(progressInterval);
-                    
-                    setTimeout(() => {
+        }
+        
+        // Simuler le progrès de chargement
+        let progress = 0;
+        const progressInterval = setInterval(() => {
+            progress += Math.random() * 15 + 5;
+            if (progress >= 100) {
+                progress = 100;
+                clearInterval(progressInterval);
+                
+                setTimeout(() => {
+                    if (loader) {
                         loader.classList.add('loaded');
                         document.body.classList.add('loaded');
-                        
-                        // Trigger hero animations
-                        setTimeout(() => {
-                            const hero = document.querySelector('.hero');
+                    }
+                    
+                    // Déclencher les animations hero
+                    setTimeout(() => {
+                        const hero = document.querySelector('.hero');
+                        if (hero) {
                             hero.classList.add('visible');
                             
-                            // Force l'affichage des éléments du hero
+                            // Forcer l'affichage des éléments du hero
                             const heroElements = hero.querySelectorAll('.hero-text h1, .hero-text p, .hero-cta, .hero-visual');
                             heroElements.forEach(el => {
                                 el.style.opacity = '1';
                                 el.style.transform = 'translateX(0)';
                             });
-                        }, 300);
-                    }, 800);
-                }
+                        }
+                    }, 300);
+                }, 800);
+            }
+            if (progressBar) {
                 progressBar.style.width = progress + '%';
-            }, 80);
-        });
+            }
+        }, 60);
+    });
+}
 
-        // ===== INITIALIZE LUCIDE ICONS =====
-        document.addEventListener('DOMContentLoaded', () => {
+// ===== NAVIGATION MOBILE COMPLÈTEMENT CORRIGÉE =====
+function initMobileNavigation() {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    const overlay = document.querySelector('.menu-overlay');
+    const body = document.body;
+    
+    // Vérifier que tous les éléments existent
+    if (!hamburger || !navLinks || !overlay) {
+        console.error('Éléments de navigation manquants');
+        return;
+    }
+    
+    // Fonction pour ouvrir le menu
+    function openMenu() {
+        menuOpen = true;
+        navLinks.classList.add('active');
+        overlay.classList.add('active');
+        body.classList.add('menu-open');
+        
+        // Changer l'icône
+        const icon = hamburger.querySelector('i');
+        if (icon) {
+            icon.setAttribute('data-lucide', 'x');
             lucide.createIcons();
-        });
-
-        // ===== RIPPLE EFFECT AMÉLIORÉ =====
-        function createRipple(event) {
-            const button = event.currentTarget;
-            
-            // Remove existing ripples
-            const existingRipples = button.querySelectorAll('.ripple');
-            existingRipples.forEach(ripple => ripple.remove());
-            
-            const ripple = document.createElement('span');
-            const rect = button.getBoundingClientRect();
-            const size = Math.max(rect.width, rect.height) * 1.5;
-            const x = event.clientX - rect.left - size / 2;
-            const y = event.clientY - rect.top - size / 2;
-            
-            ripple.style.width = ripple.style.height = size + 'px';
-            ripple.style.left = x + 'px';
-            ripple.style.top = y + 'px';
-            ripple.classList.add('ripple');
-            
-            button.appendChild(ripple);
-            
-            setTimeout(() => {
-                ripple.remove();
-            }, 600); aaa
         }
+        
+        console.log('Menu ouvert');
+    }
+    
+    // Fonction pour fermer le menu
+    function closeMenu() {
+        menuOpen = false;
+        navLinks.classList.remove('active');
+        overlay.classList.remove('active');
+        body.classList.remove('menu-open');
+        
+        // Remettre l'icône menu
+        const icon = hamburger.querySelector('i');
+        if (icon) {
+            icon.setAttribute('data-lucide', 'menu');
+            lucide.createIcons();
+        }
+        
+        console.log('Menu fermé');
+    }
+    
+    // Event listener pour le bouton hamburger
+    hamburger.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        if (menuOpen) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    });
+    
+    // Fermer le menu en cliquant sur l'overlay
+    overlay.addEventListener('click', closeMenu);
+    
+    // Fermer le menu en cliquant sur un lien et faire le smooth scroll
+    const navLinkElements = navLinks.querySelectorAll('a');
+    navLinkElements.forEach(link => {
+        link.addEventListener('click', (e) => {
+            const href = link.getAttribute('href');
+            
+            // Si c'est un lien interne (#section)
+            if (href && href.startsWith('#')) {
+                e.preventDefault();
+                closeMenu();
+                
+                // Smooth scroll vers la section
+                setTimeout(() => {
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const headerHeight = document.querySelector('header').offsetHeight;
+                        const targetPosition = target.offsetTop - headerHeight - 20;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                }, 300); // Délai pour laisser le menu se fermer
+            } else {
+                // Pour les liens externes, juste fermer le menu
+                closeMenu();
+            }
+        });
+    });
+    
+    // Fermer le menu avec Escape
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && menuOpen) {
+            closeMenu();
+        }
+    });
+    
+    // Gérer le redimensionnement de la fenêtre
+    const mediaQuery = window.matchMedia('(max-width: 968px)');
+    function handleMediaQuery(e) {
+        if (!e.matches && menuOpen) {
+            // Sur desktop, fermer le menu
+            closeMenu();
+        }
+    }
+    
+    mediaQuery.addListener(handleMediaQuery);
+    handleMediaQuery(mediaQuery);
+    
+    console.log('Navigation mobile initialisée');
+}
 
-        // Add ripple effect to buttons
+// ===== SMOOTH SCROLLING POUR DESKTOP =====
+function initSmoothScrolling() {
+    // Pour tous les liens de navigation (desktop et mobile)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            
+            // Éviter les conflits avec le menu mobile
+            if (this.closest('.nav-links') && window.innerWidth <= 968) {
+                return; // Laisse le menu mobile gérer
+            }
+            
+            e.preventDefault();
+            
+            const target = document.querySelector(href);
+            if (target) {
+                const headerHeight = document.querySelector('header').offsetHeight;
+                const targetPosition = target.offsetTop - headerHeight - 20;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+}
+// ===== HEADER AU SCROLL =====
+function initHeaderScroll() {
+    let lastScrollTop = 0;
+    const header = document.querySelector('header');
+    
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Background blur au scroll
+        if (scrollTop > 100) {
+            header.style.background = 'rgba(10, 31, 68, 0.95)';
+            header.style.backdropFilter = 'blur(10px)';
+        } else {
+            header.style.background = 'var(--blue-night)';
+            header.style.backdropFilter = 'none';
+        }
+        
+        lastScrollTop = scrollTop;
+    }, { passive: true });
+}
+
+// ===== RIPPLE EFFECT CORRIGÉ =====
+function createRipple(event) {
+    const button = event.currentTarget;
+    
+    // Remove existing ripples
+    const existingRipples = button.querySelectorAll('.ripple');
+    existingRipples.forEach(ripple => ripple.remove());
+    
+    const ripple = document.createElement('span');
+    const rect = button.getBoundingClientRect();
+    const size = Math.max(rect.width, rect.height) * 1.5;
+    const x = event.clientX - rect.left - size / 2;
+    const y = event.clientY - rect.top - size / 2;
+    
+    ripple.style.width = ripple.style.height = size + 'px';
+    ripple.style.left = x + 'px';
+    ripple.style.top = y + 'px';
+    ripple.classList.add('ripple');
+    
+    button.appendChild(ripple);
+    
+    setTimeout(() => {
+        if (ripple.parentNode) {
+            ripple.remove();
+        }
+    }, 600);
+}
+
+// ===== ANIMATIONS AU SCROLL =====
+function initScrollAnimations() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+
+    // Observer tous les éléments avec fade-in class
+    document.querySelectorAll('.fade-in').forEach(el => {
+        observer.observe(el);
+    });
+}
+
+// ===== MICRO-INTERACTIONS =====
+function initMicroInteractions() {
+    // Button hover effects
+    document.querySelectorAll('.btn').forEach(btn => {
+        btn.addEventListener('mouseenter', function() {
+            if (!this.classList.contains('loading')) {
+                this.style.transform = 'translateY(-3px) scale(1.02)';
+            }
+        });
+        
+        btn.addEventListener('mouseleave', function() {
+            if (!this.classList.contains('loading')) {
+                this.style.transform = 'translateY(0) scale(1)';
+            }
+        });
+    });
+
+    // Service cards hover
+    document.querySelectorAll('.service-card').forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-10px) scale(1.02)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
+        });
+    });
+
+    // Project cards hover
+    document.querySelectorAll('.project-card').forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-5px) scale(1.02)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
+        });
+    });
+}
+
+// ===== FLOATING SHAPES ANIMATION =====
+function animateFloatingShapes() {
+    const shapes = document.querySelectorAll('.floating-shapes .shape');
+    shapes.forEach((shape, index) => {
+        const randomX = Math.random() * 80 + 10; // Entre 10% et 90%
+        const randomY = Math.random() * 80 + 10; // Entre 10% et 90%
+        const duration = 15000 + (index * 2000);
+        
+        shape.style.left = randomX + '%';
+        shape.style.top = randomY + '%';
+        shape.style.animationDuration = duration + 'ms';
+    });
+}
+
+// ===== NETTOYAGE DES RIPPLES =====
+function cleanupRipples() {
+    // Nettoyer les ripples qui pourraient rester
+    document.addEventListener('click', (e) => {
+        if (e.target.closest('.ripple-effect')) {
+            setTimeout(() => {
+                const allRipples = document.querySelectorAll('.ripple');
+                allRipples.forEach(ripple => {
+                    if (ripple.parentNode) {
+                        ripple.remove();
+                    }
+                });
+            }, 1000);
+        }
+    });
+}
+
+// ===== GESTION DES ERREURS =====
+function handleErrors() {
+    window.addEventListener('error', function(e) {
+        console.error('Erreur JavaScript:', e.error);
+    });
+    
+    // Vérifier que Lucide est chargé
+    if (typeof lucide === 'undefined') {
+        console.warn('Lucide icons non chargé');
+    }
+}
+// ===== INITIALISATION PRINCIPALE =====
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM chargé - Initialisation...');
+    
+    try {
+        // 1. Initialiser Lucide icons en premier
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+            console.log('✓ Lucide icons initialisé');
+        } else {
+            console.warn('⚠ Lucide non disponible');
+        }
+        
+        // 2. Initialiser le loader
+        initLoader();
+        console.log('✓ Loader initialisé');
+        
+        // 3. Initialiser la navigation mobile (PRIORITÉ)
+        initMobileNavigation();
+        console.log('✓ Navigation mobile initialisée');
+        
+        // 4. Initialiser le smooth scrolling
+        initSmoothScrolling();
+        console.log('✓ Smooth scrolling initialisé');
+        
+        // 5. Initialiser les effets au scroll
+        initHeaderScroll();
+        initScrollAnimations();
+        console.log('✓ Effets de scroll initialisés');
+        
+        // 6. Initialiser les interactions
+        initMicroInteractions();
+        console.log('✓ Micro-interactions initialisées');
+        
+        // 7. Ajouter les ripple effects
         document.querySelectorAll('.ripple-effect').forEach(button => {
             button.addEventListener('click', createRipple);
         });
+        console.log('✓ Effets ripple ajoutés');
+        
+        // 8. Nettoyage et gestion des erreurs
+        cleanupRipples();
+        handleErrors();
+        console.log('✓ Nettoyage et gestion d\'erreurs activés');
+        
+        // 9. Animations des formes flottantes
+        setTimeout(() => {
+            animateFloatingShapes();
+            console.log('✓ Formes flottantes animées');
+        }, 1000);
+        
+        console.log('🎉 Toutes les fonctionnalités initialisées avec succès!');
+        
+    } catch (error) {
+        console.error('❌ Erreur lors de l\'initialisation:', error);
+    }
+});
 
-        // ===== SMOOTH SCROLLING ===== 
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+// ===== FONCTIONS DE DEBUG =====
+function debugNavigation() {
+    console.log('=== DEBUG NAVIGATION ===');
+    
+    const sections = document.querySelectorAll('section[id]');
+    const links = document.querySelectorAll('nav a[href^="#"]');
+    
+    console.log('📍 Sections trouvées:', sections.length);
+    sections.forEach(section => {
+        console.log('- #' + section.id, section);
+    });
+    
+    console.log('🔗 Liens de navigation:', links.length);
+    links.forEach(link => {
+        const href = link.getAttribute('href');
+        const target = document.querySelector(href);
+        console.log('- ' + href, target ? '✓' : '❌', link);
+    });
+    
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    const overlay = document.querySelector('.menu-overlay');
+    
+    console.log('🍔 Hamburger:', hamburger ? '✓' : '❌');
+    console.log('📱 Nav Links:', navLinks ? '✓' : '❌');
+    console.log('🌫 Overlay:', overlay ? '✓' : '❌');
+    
+    console.log('========================');
+}
 
-        // ===== HEADER BACKGROUND ON SCROLL =====
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(10, 31, 68, 0.95)';
-                header.style.backdropFilter = 'blur(10px)';
-            } else {
-                header.style.background = 'var(--blue-night)';
-                header.style.backdropFilter = 'none';
-            }
-        });
+// Fonction pour tester la navigation
+function testNavigation() {
+    console.log('🧪 Test de navigation...');
+    
+    const testLinks = ['#accueil', '#services', '#portfolio', '#about', '#contact'];
+    
+    testLinks.forEach(link => {
+        const target = document.querySelector(link);
+        if (target) {
+            console.log('✓ ' + link + ' -> trouve la section');
+        } else {
+            console.error('❌ ' + link + ' -> section introuvable');
+        }
+    });
+}
 
-        // ===== SCROLL ANIMATIONS =====
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+// Fonction pour forcer la réinitialisation
+function forceReinit() {
+    console.log('🔄 Forçage de la réinitialisation...');
+    
+    // Supprimer les anciens event listeners
+    const hamburger = document.querySelector('.hamburger');
+    if (hamburger) {
+        hamburger.replaceWith(hamburger.cloneNode(true));
+    }
+    
+    // Réinitialiser
+    setTimeout(() => {
+        initMobileNavigation();
+        console.log('✓ Navigation réinitialisée');
+    }, 100);
+}
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-
-        // Observe all elements with fade-in class
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
-
-        // ===== MOBILE MENU TOGGLE =====
-        function createMobileMenu() {
-            const nav = document.querySelector('nav');
+// ===== UTILITAIRES GLOBAUX =====
+window.nexusDebug = {
+    navigation: debugNavigation,
+    test: testNavigation,
+    reinit: forceReinit,
+    menu: {
+        open: () => {
             const navLinks = document.querySelector('.nav-links');
-            
-            // Create hamburger button
-            const hamburger = document.createElement('button');
-            hamburger.className = 'hamburger';
-            hamburger.innerHTML = '<i data-lucide="menu"></i>';
-            hamburger.style.cssText = `
-                display: none;
-                background: none;
-                border: none;
-                color: white;
-                font-size: 1.5rem;
-                cursor: pointer;
-                padding: 0.5rem;
-            `;
-            
-            nav.appendChild(hamburger);
-            
-            // Toggle menu on mobile
-            hamburger.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-                const icon = hamburger.querySelector('i');
-                if (navLinks.classList.contains('active')) {
-                    icon.setAttribute('data-lucide', 'x');
-                } else {
-                    icon.setAttribute('data-lucide', 'menu');
-                }
-                lucide.createIcons();
-            });
-            
-            // Show hamburger on mobile
-            const mediaQuery = window.matchMedia('(max-width: 968px)');
-            function handleMediaQuery(e) {
-                if (e.matches) {
-                    hamburger.style.display = 'block';
-                    lucide.createIcons();
-                } else {
-                    hamburger.style.display = 'none';
-                    navLinks.classList.remove('active');
-                }
+            const overlay = document.querySelector('.menu-overlay');
+            navLinks?.classList.add('active');
+            overlay?.classList.add('active');
+            document.body.classList.add('menu-open');
+        },
+        close: () => {
+            const navLinks = document.querySelector('.nav-links');
+            const overlay = document.querySelector('.menu-overlay');
+            navLinks?.classList.remove('active');
+            overlay?.classList.remove('active');
+            document.body.classList.remove('menu-open');
+        }
+    }
+};
+
+// ===== GESTION DU RESIZE =====
+window.addEventListener('resize', function() {
+    // Fermer le menu sur resize si on passe en desktop
+    if (window.innerWidth > 968) {
+        const navLinks = document.querySelector('.nav-links');
+        const overlay = document.querySelector('.menu-overlay');
+        
+        if (navLinks?.classList.contains('active')) {
+            navLinks.classList.remove('active');
+            overlay?.classList.remove('active');
+            document.body.classList.remove('menu-open');
+            menuOpen = false;
+        }
+    }
+});
+
+// Message de démarrage
+console.log(`
+🚀 NEXUS WEB4U - Navigation System
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Tapez 'nexusDebug.navigation()' pour débugger
+Tapez 'nexusDebug.test()' pour tester
+Tapez 'nexusDebug.reinit()' pour réinitialiser
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+`);
+
+// ===== COMPATIBILITÉ =====
+// Support des anciens navigateurs
+if (!Element.prototype.closest) {
+    Element.prototype.closest = function(selector) {
+        var el = this;
+        while (el && el.nodeType === 1) {
+            if (el.matches(selector)) {
+                return el;
             }
-            
-            mediaQuery.addListener(handleMediaQuery);
-            handleMediaQuery(mediaQuery);
+            el = el.parentNode;
         }
-
-        // Initialize mobile menu
-        createMobileMenu();
-
-        // ===== MICRO-INTERACTIONS =====
-        // Button hover effects
-        document.querySelectorAll('.btn').forEach(btn => {
-            btn.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-3px) scale(1.02)';
-            });
-            
-            btn.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
-            });
-        });
-
-        // Service cards hover
-        document.querySelectorAll('.service-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-10px) scale(1.02)';
-            });
-            
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
-            });
-        });
-
-        // ===== FLOATING SHAPES ANIMATION =====
-        function animateFloatingShapes() {
-            const shapes = document.querySelectorAll('.floating-shapes .shape');
-            shapes.forEach((shape, index) => {
-                const randomX = Math.random() * 100;
-                const randomY = Math.random() * 100;
-                const duration = 15000 + (index * 2000);
-                
-                shape.style.left = randomX + '%';
-                shape.style.top = randomY + '%';
-                shape.style.animationDuration = duration + 'ms';
-            });
-        }
-
-        // Initialize floating shapes
-        setTimeout(animateFloatingShapes, 1000);
-
+        return null;
+    };
+}
     </script>
 
 </body>
