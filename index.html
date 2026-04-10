@@ -88,6 +88,10 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="hero-badge-dot"></span>
+                        Agence Digitale Premium
+                    </div>
                     <h1>Votre <span class="accent">Nexus</span> Digital</h1>
                     <p>Nous créons et modernisons des sites web exceptionnels qui boostent votre activité et impressionnent vos clients.</p>
                     <div class="hero-cta">
@@ -155,6 +159,7 @@
     <!-- ===== SERVICES SECTION ===== -->
     <section class="section section-light" id="services">
         <div class="container">
+            <span class="section-eyebrow fade-in">Ce que nous faisons</span>
             <h2 class="section-title fade-in">Nos Services</h2>
             <p class="section-subtitle fade-in">Des solutions complètes pour votre présence digitale</p>
             <div class="services-grid">
@@ -192,6 +197,7 @@
     <!-- ===== PORTFOLIO SECTION AVEC LIENS ===== -->
     <section class="section section-white" id="portfolio">
         <div class="container">
+            <span class="section-eyebrow fade-in">Nos projets</span>
             <h2 class="section-title fade-in">Nos Réalisations</h2>
             <p class="section-subtitle fade-in">Des projets qui font la différence</p>
             <div class="portfolio-grid">
@@ -622,22 +628,16 @@ function initSmoothScrolling() {
 }
 // ===== HEADER AU SCROLL =====
 function initHeaderScroll() {
-    let lastScrollTop = 0;
     const header = document.querySelector('header');
-    
+
     window.addEventListener('scroll', () => {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
-        // Background blur au scroll
-        if (scrollTop > 100) {
-            header.style.background = 'rgba(10, 31, 68, 0.95)';
-            header.style.backdropFilter = 'blur(10px)';
+
+        if (scrollTop > 80) {
+            header.classList.add('scrolled');
         } else {
-            header.style.background = 'var(--blue-night)';
-            header.style.backdropFilter = 'none';
+            header.classList.remove('scrolled');
         }
-        
-        lastScrollTop = scrollTop;
     }, { passive: true });
 }
 
