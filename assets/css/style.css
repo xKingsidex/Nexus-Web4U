@@ -254,7 +254,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem 0;
+    padding: 2rem 0;
     position: relative;
 }
 
@@ -701,26 +701,39 @@ nav {
 
 .section-title {
     font-family: 'Poppins', sans-serif;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     color: var(--blue-night);
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 1.4rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 56px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--blue-electric), var(--green-neon));
+    border-radius: 2px;
 }
 
 .section-subtitle {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--gray-dark);
+    margin-top: 1.4rem;
     margin-bottom: 4rem;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 /* ===== SECTIONS ===== */
 .section {
-    padding: 80px 0;
+    padding: 110px 0;
 }
 
 .section-light {
@@ -745,13 +758,14 @@ nav {
 .service-card {
     background: var(--white-pure);
     padding: 3rem;
-    border-radius: 24px;
+    border-radius: 20px;
     text-align: center;
-    box-shadow: var(--shadow-light);
+    box-shadow: 0 2px 16px rgba(10, 31, 68, 0.07);
     transition: all var(--transition-smooth);
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    border: 1px solid rgba(10, 31, 68, 0.06);
 }
 
 .service-card::before {
@@ -760,8 +774,9 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background: linear-gradient(90deg, var(--blue-electric), var(--green-neon));
+    border-radius: 20px 20px 0 0;
 }
 
 .service-card::after {
@@ -776,8 +791,9 @@ nav {
 }
 
 .service-card:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: var(--shadow-medium);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(10, 31, 68, 0.13);
+    border-color: rgba(30, 144, 255, 0.18);
 }
 
 .service-card:hover::after {
@@ -825,9 +841,10 @@ nav {
 
 .project-card {
     background: var(--white-pure);
-    border-radius: 24px;
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: var(--shadow-light);
+    box-shadow: 0 2px 16px rgba(10, 31, 68, 0.07);
+    border: 1px solid rgba(10, 31, 68, 0.06);
     transition: all var(--transition-smooth);
     cursor: pointer;
     position: relative;
@@ -847,8 +864,9 @@ nav {
 }
 
 .project-card:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: var(--shadow-medium);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(10, 31, 68, 0.13);
+    border-color: rgba(30, 144, 255, 0.18);
 }
 
 .project-card:hover::before {
@@ -938,6 +956,26 @@ nav {
     background: linear-gradient(135deg, var(--gray-dark), rgba(51, 51, 51, 0.8));
     color: var(--white-pure);
 }
+
+/* Carte projet avec photo réelle */
+.project-image.project-img-cover {
+    background: var(--gray-light);
+    padding: 0;
+    display: block;
+}
+
+.project-cover-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform var(--transition-slow);
+}
+
+.project-card:hover .project-cover-img {
+    transform: scale(1.04);
+}
+
 /* ===== ABOUT SECTION AMÉLIORÉE ===== */
 .about-content {
     display: grid;
@@ -974,7 +1012,8 @@ nav {
     padding: 2rem;
     border-radius: 16px;
     text-align: center;
-    box-shadow: var(--shadow-light);
+    box-shadow: 0 2px 16px rgba(10, 31, 68, 0.07);
+    border: 1px solid rgba(10, 31, 68, 0.06);
     transition: all var(--transition-smooth);
 }
 
@@ -1143,7 +1182,6 @@ nav {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 2rem;
-    text-transform: uppercase;
 }
 
 .contact-text p {
@@ -1210,6 +1248,8 @@ footer {
     background: var(--gray-dark);
     color: var(--white-pure);
     padding: 3rem 0 2rem;
+    border-top: 3px solid transparent;
+    border-image: linear-gradient(90deg, var(--blue-electric), var(--green-neon)) 1;
 }
 
 .footer-content {
@@ -1460,7 +1500,7 @@ footer {
     }
     
     .section {
-        padding: 60px 0;
+        padding: 70px 0;
     }
 }
 
